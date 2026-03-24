@@ -4,34 +4,40 @@
 <meta charset="UTF-8">
 <title>404</title>
 <style>
+/* BASE STYLES */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: white;
     color: #0b3d91;
     text-align: center;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 12vw; /* Responsive font size based on viewport width */
+    margin: 0;
+    line-height: 1;
 }
 
-a {
-    color: yellow;
-    text-decoration: none;
+p {
+    font-size: 2.5vw; /* Scales with viewport width */
+    margin-top: 10px;
 }
-.back-btn {
+
+a.back-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 28px;
+    padding: 1em 2em;
     background: linear-gradient(135deg, #0b3d91, #1e88e5);
     color: white;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
+    font-size: 1.2em;
     transition: 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -46,6 +52,50 @@ a {
 .back-btn:active {
     transform: scale(0.95);
 }
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Small devices (mobile) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw; /* Larger and more prominent */
+    }
+    p {
+        font-size: 4vw;
+    }
+    a.back-btn {
+        padding: 1.2em 2.5em;
+        font-size: 1.4em;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+    a.back-btn {
+        padding: 1.1em 2.2em;
+        font-size: 1.3em;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
+    p {
+        font-size: 24px;
+    }
+    a.back-btn {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+}
 </style>
 </head>
 <body>
@@ -53,9 +103,7 @@ a {
 <div>
     <h1>404</h1>
     <p>Page Not Found</p>
-    <a href="index.html" class="back-btn">
-    ← Back to Home
-</a>
+    <a href="index.html" class="back-btn">← Back to Home</a>
 </div>
 
 </body>

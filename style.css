@@ -109,7 +109,7 @@
 .hero {
     height: 380px;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('./images/smart\ city.webp');
+    url('images/smart\ city.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -2550,4 +2550,24 @@ button:hover {
     .map-container {
         margin: auto;
     }
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card button,
+.card .btn {
+    margin-top: auto;
+    align-self: center;   /* 🔥 center button */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;      /* 🔥 fixed height */
+    object-fit: cover;  /* 🔥 keeps image proper */
+    border-radius: 8px;
 }

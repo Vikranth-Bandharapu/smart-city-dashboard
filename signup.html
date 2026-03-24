@@ -12,7 +12,7 @@
 body {
     height:100vh; display:flex; justify-content:center; align-items:center;
     background: linear-gradient(rgba(11,61,145,0.7), rgba(11,61,145,0.7)),
-    url('https://images.unsplash.com/photo-1508057198894-247b23fe5ade');
+    url('./images/paralox.webp');
     background-size:cover; background-position:center;
 }
 
@@ -49,12 +49,12 @@ body {
     <button class="back-btn" onclick="goBack()">← Back</button>
     <h2>Sign Up</h2>
 
-    <form onsubmit="return registerUser()">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Confirm Password" required>
+    <form id="signupForm">
+        <input type="text" id="fullname" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
 
         <button type="submit">Sign Up</button>
     </form>
@@ -63,12 +63,27 @@ body {
 </div>
 
 <script>
-function goBack() { window.history.back(); }
-function registerUser() {
-    alert("Sign Up Successful (Demo)");
-    window.location.href = "login.html";
-    return false;
+function goBack() {
+    window.history.back();
 }
+
+// Form submit handler
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if(password === confirmPassword) {
+        alert("Sign Up Successful!");
+        window.location.href = "login.html"; // Redirect to login
+    } else {
+        alert("Passwords do not match! Please try again.");
+        document.getElementById('password').value = '';
+        document.getElementById('confirmPassword').value = '';
+        document.getElementById('password').focus();
+    }
+});
 </script>
 
 </body>

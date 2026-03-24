@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+     <a href="infrastructure.html" class="logo">
+    <img src="./images/white-logo.webp" alt="logo">
+</a>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+
+        <li class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+            <ul class="dropdown-content" id="dropdown">
+                <li><a href="home1.html">Home 1</a></li>
+                 <li><a href="home2.html">Home 2</a></li>
+            </ul>
+        </li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+       
+
+    </ul>
+</div>
+
+
+  <!-- Section 1: Hero / Overview -->
+  <section class="hero-infra">
+    <div class="container">
+      <h1>Smart City Infrastructure</h1>
+      <p>Explore ongoing projects, facilities, and city development initiatives enhancing our Smart City.</p>
+      <img src="./images/smart city  city.webp" alt="City Infrastructure Illustration">
+    </div>
+  </section>
+
+  <!-- Section 2: Infrastructure Highlights -->
+  <section class="infra-highlights">
+    <div class="container">
+      <h2>Major Projects & Facilities</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./images/OIP (1).webp" alt="Water Supply">
+          <h3>Water Supply</h3>
+          <p>Modern water supply systems ensuring safe and continuous access to water for all citizens.</p>
+          <a href="404.html" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/download.webp" alt="Energy & Electricity">
+          <h3>Energy & Electricity</h3>
+          <p>Smart grids and renewable energy projects powering the city efficiently and sustainably.</p>
+          <a href="404.html" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/download (1).webp" alt="Transport & Roads">
+          <h3>Transport & Roads</h3>
+          <p>Modern roads, public transport, and smart traffic management ensuring smooth city mobility.</p>
+          <a href="404.html" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/download (2).webp" alt="Parks & Public Spaces">
+          <h3>Parks & Public Spaces</h3>
+          <p>Green spaces and recreational areas for healthier, livable urban communities.</p>
+          <a href="404.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: City Map / Project Locations -->
+  <section class="infra-map">
+    <div class="container">
+      <h2>City Project Locations</h2>
+      <p>Interactive map highlighting major infrastructure projects across the city.</p>
+      <img src="./images/OIP (2).webp" alt="City Map with Projects">
+    </div>
+  </section>
+
+  <!-- Section 4: Project Stats / Progress -->
+  <section class="infra-stats">
+    <div class="container">
+      <h2>Project Progress</h2>
+      <div class="stat-bar">
+        <p>Water Supply Projects - 80% Completed</p>
+        <div class="progress"><div style="width:80%"></div></div>
+      </div>
+      <div class="stat-bar">
+        <p>Transport & Roads - 65% Completed</p>
+        <div class="progress"><div style="width:65%"></div></div>
+      </div>
+      <div class="stat-bar">
+        <p>Energy & Electricity - 90% Completed</p>
+        <div class="progress"><div style="width:90%"></div></div>
+      </div>
+      <div class="stat-bar">
+        <p>Parks & Public Spaces - 70% Completed</p>
+        <div class="progress"><div style="width:70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CTA / Contact -->
+  <section class="infra-cta">
+    <div class="container">
+      <h2>Need Assistance or Want to Report an Issue?</h2>
+      <p>Reach out to us and help improve our Smart City initiatives.</p>
+      <a href="404.html" class="btn">Report Issue</a>
+      <a href="404.html" class="btn btn-outline">Contact Us</a>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="404.html">Transport</a></li>
+                <li><a href="404.html">Utilities</a></li>
+                <li><a href="404.html">Planning</a></li>
+                <li><a href="404.html">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+   
+    </div>
+        </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+     <a href="events.html" class="logo">
+    <img src="./images/white-logo.webp" alt="logo">
+</a>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+
+        <li class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+            <ul class="dropdown-content" id="dropdown">
+                <li><a href="home1.html">Home 1</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+
+            </ul>
+        </li>
+
+       
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+
+    </ul>
+</div>
+<style>
+
+/* SECTION */
+.events {
+    padding: 60px 20px;
+    background: #f5f7fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0b3d91;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-buttons button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    background: #0b3d91;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* TIMELINE (NO LINE) */
+.timeline {
+    list-style: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+}
+
+/* DATE */
+.timeline-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* CARD */
+.timeline-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #0b3d91;
+}
+
+/* HOVER */
+.timeline-content:hover {
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .timeline-content {
+        padding: 12px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="events">
+
+    <h2 class="section-title">Upcoming Events</h2>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filter-buttons">
+        <button onclick="filterEvents('all')">All</button>
+        <button onclick="filterEvents('health')">Health</button>
+        <button onclick="filterEvents('public')">Public</button>
+        <button onclick="filterEvents('jobs')">Jobs</button>
+    </div>
+
+    <!-- EVENTS LIST -->
+    <ul class="timeline">
+
+        <li class="public">
+            <div class="timeline-date">25 Mar 2026</div>
+            <div class="timeline-content">
+                <h3>City Clean Drive</h3>
+                <p>Join the city-wide cleanliness initiative.</p>
+            </div>
+        </li>
+
+        <li class="health">
+            <div class="timeline-date">26–27 Mar 2026</div>
+            <div class="timeline-content">
+                <h3>Health Camp</h3>
+                <p>Free medical checkups at Central Park.</p>
+            </div>
+        </li>
+
+        <li class="public">
+            <div class="timeline-date">28 Mar 2026</div>
+            <div class="timeline-content">
+                <h3>Public Meeting</h3>
+                <p>Discussion on smart city plans.</p>
+            </div>
+        </li>
+
+        <li class="jobs">
+            <div class="timeline-date">30 Mar 2026</div>
+            <div class="timeline-content">
+                <h3>Job Fair</h3>
+                <p>Multiple companies hiring candidates.</p>
+            </div>
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<section class="event-register">
+
+    <h2 class="section-title">Register for Event</h2>
+
+    <form id="eventForm">
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+
+        <select required>
+            <option value="">Select Event</option>
+            <option>City Clean Drive</option>
+            <option>Health Camp</option>
+            <option>Public Meeting</option>
+            <option>Job Fair</option>
+        </select>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+
+
+</section>
+
+<!-- Section 3: Highlights & Announcements -->
+<section class="events-highlights">
+  <div class="container">
+    <div class="highlights-left">
+      <h2>Highlights & Announcements</h2>
+      <p>Stay updated with the latest events, key notices, and milestones achieved in our Smart City initiatives. Access official information and download important resources.</p>
+      <a href="404.html" class="btn">Read Official Notice</a>
+      <a href="404.html" class="btn btn-outline">Download PDF</a>
+    </div>
+    <div class="highlights-right">
+      <div class="stat">
+        <h3>50+</h3>
+        <p>Events Organized</p>
+      </div>
+      <div class="stat">
+        <h3>10,000+</h3>
+        <p>Participants Engaged</p>
+      </div>
+      <div class="stat">
+        <h3>30+</h3>
+        <p>Official Partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+               <li><a href="404.html">Transport</a></li>
+                <li><a href="404.html">Utilities</a></li>
+                <li><a href="404.html">Planning</a></li>
+                <li><a href="404.html">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+
+<script>
+function toggleDropdown(e) {
+    e.preventDefault(); // stop navigation
+    document.getElementById("dropdown").classList.toggle("show");
+}
+</script>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    let trigger = window.innerHeight * 0.85;
+
+    reveals.forEach(el => {
+        let top = el.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+<script>
+window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+});
+</script>
+<script>
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const c = +counter.innerText;
+
+        const increment = target / 100;
+
+        if (c < target) {
+            counter.innerText = Math.ceil(c + increment);
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
+</script>
+<script>
+/* 404 redirect */
+function open404() {
+    window.location.href = "404.html";
+}
+
+/* SCROLL ANIMATION */
+const cards2 = document.querySelectorAll(".initiative-card");
+
+window.addEventListener("scroll", () => {
+    let trigger = window.innerHeight * 0.85;
+
+    cards2.forEach(card => {
+        let top = card.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            card.classList.add("show");
+        }
+    });
+});
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+<script>
+const cards = document.querySelectorAll(".project-card");
+
+window.addEventListener("scroll", () => {
+    let triggerBottom = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        let cardTop = card.getBoundingClientRect().top;
+
+        if (cardTop < triggerBottom) {
+            card.classList.add("show");
+        }
+    });
+});
+</script>
+<script>
+document.getElementById("eventForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    window.location.href = "404.html";
+});
+</script>
+<script>
+function filterEvents(category) {
+    let items = document.querySelectorAll(".timeline li");
+
+    items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+</script>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

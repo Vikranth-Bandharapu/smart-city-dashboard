@@ -13,9 +13,9 @@
 <div class="navbar">
 
     <!-- LOGO -->
-    <div class="logo">
-        <img src="./images/white-logo.webp" alt="logo">
-    </div>
+   <a href="news.html" class="logo">
+    <img src="./images/white-logo.webp" alt="logo">
+</a>
 
     <!-- HAMBURGER -->
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -26,16 +26,14 @@
     <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
     
     <ul class="dropdown-content" id="dropdown">
-        <li><a href="index.html">Home</a></li>
         <li><a href="home1.html">Home 1</a></li>
+        <li><a href="home2.html">Home 2</a></li>
     </ul>
 </li>
-
-        <li><a href="login.html">Login</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
         <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
 
     </ul>
@@ -134,12 +132,13 @@
 
             <!-- Contact Form -->
             <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+</form>
             </div>
         </div>
     </div>
@@ -235,6 +234,26 @@
     </div>
 
 </footer>
+
+
+
+<script id="formfix01">
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop default submit
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (name !== "" && email !== "" && message !== "") {
+        // ✅ All fields filled → redirect
+        window.location.href = "404.html";
+    } else {
+        // ❌ Show browser validation
+        alert("Please fill all fields correctly!");
+    }
+});
+</script>
 <script>
 const counters = document.querySelectorAll('.counter');
 

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+    <a href="home2.html" class="logo">
+    <img src="./images/white-logo.webp" alt="logo">
+</a>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+
+        <li class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+            <ul class="dropdown-content" id="dropdown">
+                <li><a href="home2.html">Home 2</a></li>
+                  <li><a href="home1.html">Home 1</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+
+<section class="home2-hero">
+    <div class="home2-content">
+        <h1>Building Future Smart Cities</h1>
+        <p>Advanced infrastructure, digital governance, and sustainable development for modern urban life.</p>
+        
+        <div class="home2-buttons">
+            <a href="404.html" class="btn-primary">Explore Projects</a>
+            <a href="404.html" class="btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+<section class="gov-services">
+    <div class="container">
+        <h2 class="section-title">Citizen Services</h2>
+        <p class="section-subtitle">Access essential public services quickly and efficiently.</p>
+
+        <div class="gov-grid">
+
+            <div class="gov-item">
+                <span>📄</span>
+                <h4>Apply Certificates</h4>
+                <p>Birth, Income, Caste certificates</p>
+            </div>
+
+            <div class="gov-item">
+                <span>💳</span>
+                <h4>Pay Bills</h4>
+                <p>Electricity, Water & Property tax</p>
+            </div>
+
+            <div class="gov-item">
+                <span>🚌</span>
+                <h4>Transport Services</h4>
+                <p>Bus pass, vehicle registration</p>
+            </div>
+
+            <div class="gov-item">
+                <span>🏥</span>
+                <h4>Health Services</h4>
+                <p>Hospital info & health schemes</p>
+            </div>
+
+            <div class="gov-item">
+                <span>🎓</span>
+                <h4>Education</h4>
+                <p>Scholarships & school services</p>
+            </div>
+
+            <div class="gov-item">
+                <span>⚖️</span>
+                <h4>Public Grievance</h4>
+                <p>Raise complaints & track status</p>
+            </div>
+            <div class="gov-item">
+    <span>🏠</span>
+    <h4>Housing Services</h4>
+    <p>Affordable housing schemes & applications</p>
+</div>
+
+<div class="gov-item">
+    <span>🌾</span>
+    <h4>Agriculture Support</h4>
+    <p>Farmer schemes, subsidies & crop info</p>
+</div>
+
+<div class="gov-item">
+    <span>👮</span>
+    <h4>Police Services</h4>
+    <p>FIR status, safety services & alerts</p>
+</div>
+
+<div class="gov-item">
+    <span>💼</span>
+    <h4>Employment</h4>
+    <p>Job portals, skill programs & updates</p>
+</div>
+
+        </div>
+    </div>
+
+</section>
+<section class="gov-notice">
+    <div class="container">
+
+        <div class="notice-header">
+            <h2>Latest Announcements</h2>
+            <a href="404.html">View All</a>
+        </div>
+
+        <div class="notice-box">
+
+            <marquee direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+
+                <p>📢 Smart City meeting scheduled on 28th March 2026.</p>
+                <p>⚠️ Road repair work on Main Street from 25th March.</p>
+                <p>🏥 Free health camp at Central Park (26–27 March).</p>
+                <p>💧 Water supply interruption in some areas.</p>
+                <p>🎓 Scholarship applications open till 30th March.</p>
+
+            </marquee>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="gov-documents">
+    <div class="container">
+
+        <h2 class="section-title">Important Documents</h2>
+        <p class="section-subtitle">Download essential forms and official documents.</p>
+
+        <div class="doc-list">
+
+            <div class="doc-item">
+                <div>
+                    <h4>Birth Certificate Form</h4>
+                    <p>Application form for birth registration</p>
+                </div>
+                <a href="404.html" class="download-btn">Download</a>
+            </div>
+
+            <div class="doc-item">
+                <div>
+                    <h4>Property Tax Form</h4>
+                    <p>Submit property tax details</p>
+                </div>
+                <a href="404.html" class="download-btn">Download</a>
+            </div>
+
+            <div class="doc-item">
+                <div>
+                    <h4>Water Connection Form</h4>
+                    <p>Apply for new water connection</p>
+                </div>
+                <a href="404.html" class="download-btn">Download</a>
+            </div>
+
+            <div class="doc-item">
+                <div>
+                    <h4>Business License Form</h4>
+                    <p>Apply for trade license</p>
+                </div>
+                <a href="404.html" class="download-btn">Download</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="gov-guidelines">
+    <div class="container">
+
+        <h2 class="section-title">Important Guidelines</h2>
+        <p class="section-subtitle">Follow these official instructions for better civic services.</p>
+
+        <ul class="guidelines-list">
+
+            <li>
+                <span>01</span>
+                <div>
+                    <h4>Keep Documents Ready</h4>
+                    <p>Ensure all required documents are uploaded correctly for faster processing.</p>
+                </div>
+            </li>
+
+            <li>
+                <span>02</span>
+                <div>
+                    <h4>Use Official Portal Only</h4>
+                    <p>Avoid third-party services and always use the government portal.</p>
+                </div>
+            </li>
+
+            <li>
+                <span>03</span>
+                <div>
+                    <h4>Track Your Applications</h4>
+                    <p>Use tracking ID to monitor your application status regularly.</p>
+                </div>
+            </li>
+
+            <li>
+                <span>04</span>
+                <div>
+                    <h4>Report Issues</h4>
+                    <p>Report any service issues through grievance system for quick resolution.</p>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                 <li><a href="404.html">Transport</a></li>
+                <li><a href="404.html">Utilities</a></li>
+                <li><a href="404.html">Planning</a></li>
+                <li><a href="404.html">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

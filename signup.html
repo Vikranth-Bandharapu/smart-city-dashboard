@@ -63,20 +63,15 @@ body {
 </div>
 
 <script>
-function goBack() {
-    window.history.back();
-}
-
-// Form submit handler
 document.getElementById('signupForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault();
 
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
 
     if(password === confirmPassword) {
-        alert("Sign Up Successful!");
-        window.location.href = "login.html"; // Redirect to login
+        // Redirect to 404 page instead of login
+        window.location.href = "404.html";
     } else {
         alert("Passwords do not match! Please try again.");
         document.getElementById('password').value = '';
